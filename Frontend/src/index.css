@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body (global layout) */
+body{
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #69c9e6ef, #57d5cfe3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input */
+.container{
+  background:white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.container h2{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Form Layout */
+.container form{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.container input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  outline: none;
+  
+}
+
+/* Focus Effect */
+.container input:focus{
+  border-color: #57d5cf;
+}
+
+.container button{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 6px;
+  background-color: #57d5cf;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.container button:hover{
+  background-color: #46bdb7;
+}
+
+/* Links */
+.container p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container a{
+  color:#57d5cf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container a:hover{
+  text-decoration: underline;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f5f5f5;
+  padding: 10px;
+  margin-top: 10px;
+
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.todo button {
+  width: auto;
+  padding: 5px 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo:hover {
+  background: #eaeaea;
+}
+
+/* 🔹 Pagination container */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+/* 🔹 Pagination buttons */
+.pagination button {
+  width: auto;          /* override full width */
+  padding: 6px 12px;
+
+  background-color: #57d5cf;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔥 Hover */
+.pagination button:hover {
+  background-color: #46bdb7;
+}
+
+/* ❌ Disabled buttons */
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 🔹 Page text */
+.pagination span {
+  font-weight: bold;
+}
