@@ -63,7 +63,7 @@ const Home = () => {
             if (data.success) {
                 setTitle("");
                 setCurrentPage(1); // 🔥 go back to first page
-                
+                fetchTodos();
             }
 
         } catch (error) {
