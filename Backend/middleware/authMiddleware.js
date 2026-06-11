@@ -7,7 +7,7 @@ const protect = async(req, res, next)=>{
         if(!token){
             return res.json({
                 success:false,
-                message:"Not Authorized",
+                message:"Not Authorized, No Token",
             });
         }
         // verify token
