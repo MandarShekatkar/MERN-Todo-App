@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
  
 const ProtectedRoute = ({ children }) => {
   const [isAuth, setIsAuth] = useState(null);
- 
+  
   useEffect(() => {
     const checkAuth = async () => {
       try {
